@@ -1,0 +1,25 @@
+name: AFly
+version: '${project.version}'
+api-version: 1.13
+main: me.arttostog.afly.AFly
+author: arttostog
+description: A simple fly plugin
+
+commands:
+  fly:
+    description: Enable or Disable fly
+    usage: /<command> [player] [on | off]
+    permission: afly.fly
+
+permissions:
+  afly.*:
+    default: op
+    children:
+      afly.reload:
+        description: Reload plugin configuration. Allows to use /fly reload
+        children:
+          afly.flyothers:
+            description: Allows to use /fly [player] [on | off]
+            children:
+              afly.fly:
+                description: Allows to use /fly
