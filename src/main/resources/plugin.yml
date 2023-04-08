@@ -17,9 +17,8 @@ permissions:
     children:
       afly.reload:
         description: Reload plugin configuration. Allows to use /fly reload
+      afly.flyothers:
+        description: Allows to use /fly [player] [on | off]
         children:
-          afly.flyothers:
-            description: Allows to use /fly [player] [on | off]
-            children:
-              afly.fly:
-                description: Allows to use /fly
+          afly.fly:
+            description: Allows to use /fly

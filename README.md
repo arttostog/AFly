@@ -1,7 +1,7 @@
 # AFly - simple fly plugin
 ### Commands
-- `/fly [player] [on | off]`
-- `/fly reload`
+- `/fly [player] [on | off]` - enable or disable fly
+- `/fly reload` - reload plugin configuration
 ### Permissions
 - `afly.fly` - allows to use /fly
 - `afly.flyothers` - allows to use /fly [player] [on | off]
